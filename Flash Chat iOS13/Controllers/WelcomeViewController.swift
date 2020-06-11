@@ -10,8 +10,8 @@ import UIKit
 import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
-  
-  @IBOutlet weak var titleLabel: CLTypingLabel!
+    
+    @IBOutlet weak var titleLabel: CLTypingLabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -22,15 +22,15 @@ class WelcomeViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
     
-    titleLabel.text = K.appName
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        titleLabel.text = K.appName
+        
+        
+        
+    }
     
     
-    
-  }
-  
-  
 }
